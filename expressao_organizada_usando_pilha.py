@@ -37,6 +37,8 @@ while i < len(lista):
             elif lista[i] == '}' and pilha[j-1] == '{':
                 pilha.pop()
                 j = j - 1
+            else:
+                print('Não está balanceado')
     i = i + 1
 
 if len(pilha) == 0:
